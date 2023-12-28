@@ -1,0 +1,17 @@
+
+        <!-- Display Objects -->
+        <table>
+    {% for object in data %}
+        <tr>
+        <td>{{ object.id }}.</td>
+        <td>{{ object.book_name }}</td>
+        <td>{{ object.book_author }}</td>
+        <td> - {{ object.book_pages }}</td>
+
+
+        <!-- If objects is empty  -->
+    {% empty %}
+        <td>No objects yet.</td>
+    {% endfor %}
+        </tr>
+        </table>
